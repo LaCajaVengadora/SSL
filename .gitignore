@@ -1,0 +1,4 @@
+*.o
+*.exe
+SSL.code-workspace
+.vscode/
