@@ -20,7 +20,7 @@ strings.o: strings.c strings.h
 # 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm -f *.o test.exe
+	rm *.o test.exe
 run: test
 	./test
 # clean:

@@ -1,3 +1,5 @@
+[Enunciado en GitHub](https://github.com/utn-frba-ssl/operaciones-de-strings/blob/main/operaciones-de-strings.adoc)
+
 # TP - 1: Strings
 
 ## PARTE 1 - Análisis Comparativo del Strings en Lenguajes de Programación
