@@ -3,17 +3,17 @@ CC = gcc
 CFLAGS = -Wall -pedantic-errors -std=c23 
 
 test: stringsTest.o strings.o
-	$(CC) $(CFLAGS) stringsTest.o strings.o -o test
+	$(CC) $(CFLAGS) stringsTest.o strings.o -o $@
 # test: main.o mate.o
 # 	$(CC) main.o mate.o -o test
 
 stringsTest.o: stringsTest.c strings.h
-	$(CC) $(CFLAGS) -c stringsTest.c -o stringsTest.o
+	$(CC) $(CFLAGS) -c $< -o $@
 # main.o: main.c mate.h
 # 	$(CC) $(CFLAGS) main.c -o main.o
 
 strings.o: strings.c strings.h
-	$(CC) $(CFLAGS) -c strings.c -o strings.o
+	$(CC) $(CFLAGS) -c -c $< -o $@
 # #$<: es el primer item en la lista de dependencias, en nuestro caso el mate.c
 # #$@: nombre del objetivo	
 # mate.o: mate.c mate.h
